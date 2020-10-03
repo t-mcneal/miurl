@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Page Not Found - miURL{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/page_not_found.css') }}">
+{% endblock %}
+
+{% block main %}
+<!--404 "Not Found" web page-->
+<h1 id="not-found">Page Not Found</h1>
+
+<!--Suggests to the user to return to homepage and links the word "homepage"-->
+<p>Sorry, we couldn't find what you are looking for.
+    Come visit our <a id="homepage" href="{{ url_for('home') }}">homepage</a> :)</p>
+
+<p id="reason">The URL may be misspelled or the page you're looking for is no longer available.</p>
+{% endblock %}

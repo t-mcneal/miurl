@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='miurl_icon.png') }}">
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+    <!--
+    This is the base template for the miURL website. It includes the header and footer
+    content that is shown on every page. 
+    
+    This Flask feature, powered by Jinja2, allows for creating a base HTML template that can 
+    be used throughout the website. The template renders different HTML content within the 
+    {% block ___ %}{% endblock %} tags, depending on the miURL web page the user visits.
+    -->
+
+    <div id="page-container">
+        
+        <!--clicking the miURL title renders the "home.html" page-->
+        <h1 id="miurl"><a href="{{ url_for('home') }}">miURL</a></h1>
+
+        <h2 id="shortner-title">URL Shortner</h2>
+
+        <nav><a id="home-link" href="{{ url_for('home') }}">Home</a></nav>
+
+        <div id="content-wrap">
+            {% block main %}
+            {% endblock %}
+        </div>
+        <footer><h5>&copy 2020 miURL</h5></footer>
+    </div>
+    
+    {% block js %}{% endblock %}
+</body>
+</html>
+
+
+

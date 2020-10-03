@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title%}'{{ code }}' - miURL{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/your_url.css') }}">
+{% endblock %}
+
+{% block main %}
+
+<!--Displays a title that includes the URL shortname code created by user-->
+<h1 id="your-url">Your URL for <span id="slash-code">{{ code }}</span></h1>
+
+<!--
+    Displays an input box containg the user's created short URL.
+    The "COPY LINK" button allows user to copy their created link to the clipboard for pasting elsewhere.
+    The "MAKE MORE" button renders the "home.html" hompage.
+-->
+<section>
+    <div id="sect-div">
+        <div id="link-box">
+            <input id="link" value="http://127.0.0.1:5000/{{ code }}">
+            <button class="copy-button" data-clipboard-target="#link">COPY LINK</button>
+            <br>
+            <a href="{{ url_for('home') }}"><button id="make-more-button">MAKE MORE</button></a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+<!--Links to the "your_url.js" JavaScript file and the jsDelivr CDN containing clipboard.js-->
+{% block js %}
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script src="{{ url_for('static', filename='js/your_url.js') }}"></script>
+{% endblock %}

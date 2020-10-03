@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+#miurl a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+#miurl a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+#miurl a:hover {
+    color:  #00BFFF;
+    text-decoration: none;
+}
+
+#miurl a:active {
+    color: #00BFFF;
+    text-decoration: none;
+    top: 1px;
+}
+
+#shortner-title {
+    text-align: center;
+    color: #808080;
+    font-family: 'Sriracha', cursive;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #00BFFF;
+    height: 40px;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#home-link {
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    padding: 20px;
+}
+
+#home-link:hover {
+    background-color: lightblue;
+}
+
+#message {
+    color: red;
+    text-align: center;
+    font-size: 13px;
+}
+
+#create {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    font-size: 25px;
+}
+
+#file-types {
+    text-align: center;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+section {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+section div {
+    display: inline-block;
+}
+
+form {
+    color: #00BFFF;
+    background-color: white;
+    border: solid;
+    border-radius: 10px;
+    border-top-color: #00BFFF;
+    border-top-width: 40px;
+    padding: 20px;
+    margin: 20px 30px;
+    width: 400px;
+    height: 240px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-group label {
+    float: left;
+    margin-right: 0.5em;
+}
+
+.form-group input {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.input-box {
+    padding: 4px;
+}
+
+#file-input {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.button {
+    border: none;
+    background-color: #8a8a8a;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin-top: -12px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color:  #afafaf;
+}
+
+#codes-list {
+    text-align: center;
+}
+
+.code-links:link {
+    color: olivedrab;
+}
+
+.code-links:visited {
+    color: olivedrab;
+}
+
+.code-links:hover {
+    color: rgb(136, 182, 43)
+}
+
+#codes-list ul li {
+    list-style-type: none;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 6.0rem; 
+}
+
+footer {
+    position: absolute;
+    background-color: #dcdcdc;
+    height: 4.7rem;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h5 {
+    color: #5e5e5e;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+

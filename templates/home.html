@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title%}miURL{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block main %}
+<p id="create">Create a short URL that links to a website or file!</p>
+
+<!--
+    Flash a "short name already taken" message if user tries to enter a short name code 
+    that already exists.
+-->
+{% for message in get_flashed_messages() %}
+<h2 id="message">{{ message }}</h2>
+{% endfor %}
+
+<section>
+    <!--
+        A form to create a short URL that links to another website.
+        INPUT BOXES:
+            1.) Website URL - users can enter the URL of another website
+            2.) Short Name - the short name code entered is used to create the short URL
+    -->
+    <div class="form-group" id="url-form">
+        <form action="your-url" method="post">
+            <label for="url">Website URL</label>
+            <input class="input-box" type="url" name="url" value="" required>
+            <br>
+            <label for="code">Short Name</label>
+            <input class="input-box" type="text" name="code" value="" required>
+            <br>
+            <input class="button" type="submit" value="SHORTEN">
+        </form>
+    </div>
+
+    <!--
+        A form to create a short URL that links to a file
+        INPUT BOXES:
+            1.) File - users can upload a file from their computer
+            2.) Short Name - the short name code entered is used to create the short URL
+    -->
+    <div class="form-group" id="file-form">
+        <form action="your-url" method="post" enctype="multipart/form-data">
+            <label for="file">pdf, png, jpeg, jpg, or gif</label>
+            <input id="file-input" class="input-box" type="file" name="file" value="" required>
+            <br>
+            <label for="code">Short Name</label>
+            <input class="input-box" type="text" name="code" value="" required>
+            <br>
+            <input class="button" id="shorten" type="submit" value="SHORTEN">
+        </form>
+    </div>
+</section>
+
+<!--Displays a list of hyperlinked short name codes created by the user based on session tracking-->
+<div id="codes-list">
+    {% if codes %}
+    <h2>Codes You Created</h2>
+    
+    <ul>
+        {% for code in codes %}
+        <a class="code-links" href="{{ url_for('redirect_to_url', code=code) }}">
+        <li>{{ code }}</li>
+        </a>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+{% endblock %}
