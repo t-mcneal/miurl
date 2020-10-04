@@ -85,7 +85,7 @@ This step enables the development environment, including the interactive debugge
 
 Watch the video below to see a demo!
 
-[![Watch the video](https://github.com/t-mcneal/miurl/blob/master/readme_image/miurl_screenshot.png)](https://youtu.be/arbSqG113i0)
+[![Watch the video](https://github.com/t-mcneal/miurl/blob/master/readme_images/miurl_screenshot.png)](https://youtu.be/arbSqG113i0)
 
 
 ## License
