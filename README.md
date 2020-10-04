@@ -8,33 +8,33 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
 ## Table of Contents
 
-* Installation
-* Usage
-* Demo
+* [Installation](https://github.com/t-mcneal/miurl/blob/master/README.md#installation)
+* [Usage](https://github.com/t-mcneal/miurl/blob/master/README.md#usage)
+* [Demo](https://github.com/t-mcneal/miurl/blob/master/README.md#demo)
 
 
 ## Installation
 
-1. Install Python 3
+1. **Install Python 3**
 
-    If not currently installed on your computer, download and install Python 3 at Python.org[https://www.python.org/downloads/].
+    If not currently installed on your computer, download and install Python 3 at [Python.org](https://www.python.org/downloads/).
 
-2. Download Project
+2. **Download Project**
 
     To install the miURL project locally, download a zip of the project from github or clone the repository.
 
-3. Create a Virtual Environment
+3. **Create a Virtual Environment**
 
     It is best to locally run a Flask application using a virtual environement. To get setup with a virtual 
-    environment, follow the quick guide[https://flask.palletsprojects.com/en/1.1.x/installation/#installation] 
+    environment, follow the quick [guide](https://flask.palletsprojects.com/en/1.1.x/installation/#installation) 
     on the Flask website, which has instructions for both Windows and Mac OS X. The guide will walk you through 
     how to create a virtual environement within the project directory and install Flask in the environment. 
     
-    > **Note:** the Flask guide uses the command line. If you are not familiar with terminal commands, read this 
-    > blog[https://scotch.io/bar-talk/10-need-to-know-mac-terminal-commands] by scotch.io to learn 10 commonly
-    > used terminal commands - #10 is a fun one!
+    >> **Note:** the Flask guide uses the command line. If you are not familiar with terminal commands, read this 
+    >> [blog](https://scotch.io/bar-talk/10-need-to-know-mac-terminal-commands) by scotch.io to learn 10 commonly
+    >> used terminal commands - #10 is a fun one!
 
-4. Edit app.py file
+4. **Edit *app.py* File**
 
     Last, you will need to make a quick edit to the *app.py* file located in the project. In addition to creating
     short URLs that link to a web page, miURL also allows users to upload and create URLs for PDF, PNG, JPEG, JPG, 
@@ -59,8 +59,8 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
     If you are unfamiliar with how to get absolute file paths for directories, use one of the following links below.
 
-    * Mac OS X[https://macpaw.com/how-to/get-file-path-mac]
-    * Windows[https://www.sony.com/electronics/support/articles/00015251]
+    * [Mac OS X](https://macpaw.com/how-to/get-file-path-mac)
+    * [Windows](https://www.sony.com/electronics/support/articles/00015251)
 
     Once making the above edit, be sure to save the *app.py* file.
 
@@ -89,7 +89,7 @@ Watch the video below to see a demo!
 
 ## License
 
-MIT[https://choosealicense.com/licenses/mit/#]
+[MIT](https://choosealicense.com/licenses/mit/)
 
 
 
