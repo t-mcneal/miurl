@@ -63,7 +63,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
     * [Mac OS X](https://macpaw.com/how-to/get-file-path-mac)
     * [Windows](https://www.sony.com/electronics/support/articles/00015251)
 
-    >> Note: Once making the above edit, be sure to save the *app.py* file.
+    >> **Note**: Once making the above edit, be sure to save the *app.py* file.
 
 
 ## Usage
