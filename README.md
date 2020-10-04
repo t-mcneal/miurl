@@ -21,7 +21,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
 2. **Download Project**
 
-    To install the miURL project locally, download a zip of the project from github or clone the repository.
+    To install the miURL project locally, download a zip of the project from GitHub or clone the repository.
 
 3. **Create a Virtual Environment**
 
@@ -37,8 +37,8 @@ Python’s Flask web framework, JSON, and clipboard.js.
 4. **Edit *app.py* File**
 
     Last, you will need to make a quick edit to the *app.py* file located in the project. In addition to creating
-    short URLs that link to a web page, miURL also allows users to upload and create URLs for PDF, PNG, JPEG, JPG, 
-    or GIF files! In order for this feature to occur, a storage location is needed.
+    short URLs that link to other websites, miURL also allows users to upload and create URLs for PDF, PNG, JPEG, 
+    JPG, or GIF files! In order for this feature to occur, a storage location is needed.
 
     Within the project, there is a *user_files* directory located in the *static* directory. The *user_files* 
     acts as a the storage location for users' uploaded files. In deployment, this storage setup would be handled 
@@ -49,7 +49,8 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
     To make the edit, open the *app.py* Python file. Near the top of the file, you should see the below code.
     For `app.config['USER_FILES']`, replace the string `'path/miurl/static/user_files/'` by inserting a string
-    of your computer's absolute file path to the *user_files* directory, located in the project's *static* directory.
+    of your computer's absolute file path to the *user_files* directory. The *user_files* directory is located 
+    in the project's *static* directory.
 
     ```python 
     # NOTE: Insert your computer's absolute file path to the "user_files" directory located 
@@ -57,7 +58,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
     app.config['USER_FILES'] = 'path/miurl/static/user_files/'
     ```
 
-    If you are unfamiliar with how to get absolute file paths for directories, use one of the following links below.
+    If you are unfamiliar with how to get absolute file paths for directories, use the following links below.
 
     * [Mac OS X](https://macpaw.com/how-to/get-file-path-mac)
     * [Windows](https://www.sony.com/electronics/support/articles/00015251)
@@ -69,7 +70,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
 Next, you will need to run the miURL Flask application in your newly created virtual environment.
 Use the command line to access the project folder and start the virtual environment. Once you have
-started the virtual environment, you can now run the app to startup the local server using the 
+enabled the virtual environment, you can now run the app to start a local server using the 
 following command line syntax.
 
 ```
