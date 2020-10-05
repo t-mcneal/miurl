@@ -1,0 +1,6 @@
+
+NOTE:
+
+This text file is needed for the user_files directory to upload to GetHub.
+
+An empty user_files directory will not push to the miURL GitHub repository.
