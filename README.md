@@ -30,7 +30,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
     on the Flask website, which has instructions for both Windows and Mac OS X. The guide will walk you through 
     how to create a virtual environement within the project directory and install Flask in the environment. 
     
-    >> **Note:** the Flask guide uses the command line. If you are not familiar with terminal commands, read this 
+    >> **Note:** The Flask guide uses the command line. If you are not familiar with terminal commands, read this 
     >> [blog](https://scotch.io/bar-talk/10-need-to-know-mac-terminal-commands) by scotch.io to learn 10 commonly
     >> used terminal commands - #10 is a fun one!
 
@@ -41,7 +41,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
     JPG, or GIF files! In order for this feature to occur, a storage location is needed.
 
     Within the project, there is a *user_files* directory located in the *static* directory. The *user_files* 
-    acts as a the storage location for users' uploaded files. In deployment, this storage setup would be handled 
+    acts as a storage location for users' uploaded files. In deployment, this storage setup would be handled 
     differently. For the purpose of running this project locally, the *user_files* directory will store 
     any files uploaded to the miURL application.
 
@@ -69,7 +69,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
 ## Usage
 
 Next, you will need to run the miURL Flask application in your newly created virtual environment.
-Use the command line to access the project folder and start the virtual environment. Once you have
+Use the command line to access the project directory and start the virtual environment. Once you have
 enabled the virtual environment, you can now run the app to start a local server using the 
 following command line syntax.
 
