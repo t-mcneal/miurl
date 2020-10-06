@@ -34,9 +34,9 @@ Python’s Flask web framework, JSON, and clipboard.js.
     >> [blog](https://scotch.io/bar-talk/10-need-to-know-mac-terminal-commands) by scotch.io to learn 10 commonly
     >> used terminal commands - #10 is a fun one!
 
-4. **Edit *app.py* File**
+4. **Add File Path to *user_files* Directory**
 
-    Last, you will need to make a quick edit to the *app.py* file located in the project. In addition to creating
+    Last, you will need to add the absolute filepath to the project's *user_files* directory. In addition to creating
     short URLs that link to other websites, miURL also allows users to upload and create URLs for PDF, PNG, JPEG, 
     JPG, or GIF files! In order for this feature to occur, a storage location is needed.
 
