@@ -47,14 +47,12 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
     ### Instrucions for Edit
 
-    To make the edit, open the *app.py* Python file. Near the top of the file, you should see the below code.
-    For `app.config['USER_FILES']`, replace the string `'path/miurl/static/user_files/'` by inserting a string
-    of your computer's absolute file path to the *user_files* directory. The *user_files* directory is located 
-    in the project's *static* directory.
+    To make the edit, open the *app.py* Python file. On line 14 of the file, you should see the below code.
+    For the `app.config['USER_FILES']` object, replace the file path string `'path/miurl/static/user_files/'` 
+    with a string of your computer's absolute file path to the *user_files* directory. The *user_files* directory 
+    is located in the project's *static* directory.
 
     ```python 
-    # NOTE: Insert your computer's absolute file path to the "user_files" directory located 
-    # in the "static" directory
     app.config['USER_FILES'] = 'path/miurl/static/user_files/'
     ```
 
