@@ -36,7 +36,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
 4. **Add File Path to *user_files* Directory**
 
-    Last, you will need to add the absolute filepath to the project's *user_files* directory. In addition to creating
+    Last, you will need to add the absolute file path to the project's *user_files* directory. In addition to creating
     short URLs that link to other websites, miURL also allows users to upload and create URLs for PDF, PNG, JPEG, 
     JPG, or GIF files! In order for this feature to occur, a storage location is needed.
 
@@ -45,9 +45,9 @@ Python’s Flask web framework, JSON, and clipboard.js.
     differently. For the purpose of running this project locally, the *user_files* directory will store 
     any files uploaded to the miURL application.
 
-    ### Instrucions for Edit
+    ### Instructions
 
-    To make the edit, open the *app.py* Python file. On line 14 of the file, you should see the below code.
+    To add the file path, open the *app.py* Python file. On line 14 of the file, you should see the below code.
     For the `app.config['USER_FILES']` object, replace the file path string `'path/miurl/static/user_files/'` 
     with a string of your computer's absolute file path to the *user_files* directory. The *user_files* directory 
     is located in the project's *static* directory.
