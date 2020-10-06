@@ -11,16 +11,11 @@
 <body>
     <!--
     This is the base template for the miURL website. It includes the header and footer
-    content that is shown on every page. 
-    
-    This Flask feature, powered by Jinja2, allows for creating a base HTML template that can 
-    be used throughout the website. The template renders different HTML content within the 
-    {% block ___ %}{% endblock %} tags, depending on the miURL web page the user visits.
+    content that is shown on every page.
     -->
 
     <div id="page-container">
         
-        <!--clicking the miURL title renders the "home.html" page-->
         <h1 id="miurl"><a href="{{ url_for('home') }}">miURL</a></h1>
 
         <h2 id="shortener-title">URL Shortener</h2>

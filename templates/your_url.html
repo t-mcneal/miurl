@@ -8,14 +8,8 @@
 
 {% block main %}
 
-<!--Displays a title that includes the URL shortname code created by user-->
 <h1 id="your-url">Your URL for <span id="slash-code">{{ code }}</span></h1>
 
-<!--
-    Displays an input box containg the user's created short URL.
-    The "COPY LINK" button allows user to copy their created link to the clipboard for pasting elsewhere.
-    The "MAKE MORE" button renders the "home.html" hompage.
--->
 <section>
     <div id="sect-div">
         <div id="link-box">
@@ -28,7 +22,7 @@
 </section>
 {% endblock %}
 
-<!--Links to the "your_url.js" JavaScript file and the jsDelivr CDN containing clipboard.js-->
+<!--The jsDelivr CDN containing clipboard.js is linked below-->
 {% block js %}
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script src="{{ url_for('static', filename='js/your_url.js') }}"></script>

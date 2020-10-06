@@ -18,12 +18,7 @@
 {% endfor %}
 
 <section>
-    <!--
-        A form to create a short URL that links to another website.
-        INPUT BOXES:
-            1.) Website URL - users can enter the URL of another website
-            2.) Short Name - the short name code entered is used to create the short URL
-    -->
+    
     <div class="form-group" id="url-form">
         <form action="your-url" method="post">
             <label for="url">Website URL</label>
@@ -36,12 +31,6 @@
         </form>
     </div>
 
-    <!--
-        A form to create a short URL that links to a file
-        INPUT BOXES:
-            1.) File - users can upload a file from their computer
-            2.) Short Name - the short name code entered is used to create the short URL
-    -->
     <div class="form-group" id="file-form">
         <form action="your-url" method="post" enctype="multipart/form-data">
             <label for="file">pdf, png, jpeg, jpg, or gif</label>
@@ -55,7 +44,6 @@
     </div>
 </section>
 
-<!--Displays a list of hyperlinked short name codes created by the user based on session tracking-->
 <div id="codes-list">
     {% if codes %}
     <h2>Codes You Created</h2>

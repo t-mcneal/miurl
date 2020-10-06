@@ -26,36 +26,17 @@ def home():
 @app.route('/your-url', methods=['GET', 'POST'])
 def your_url():
     if request.method == 'POST':
-        # Create an empty dictionary to work with JSON.
         urls = {}
         
-        # Opens the JSON file 'urls.json' containing created URLs if the file exists.
-        # Then, the empty dictianary stores the loaded JSON file.
         if os.path.exists('urls.json'):
             with open('urls.json') as urls_file:
                 urls = json.load(urls_file)
         
-        # Flash a "short name already taken" message if user tries to enter a short name code 
-        # that already exists in the JSON file.
         if request.form['code'] in urls.keys():
             flash('That short name has already been taken. Please select another name.')
             return redirect(url_for('home'))
 
-        # Checks whether the user is creating a short URL for a website or file by checking 
-        # the name attribute keys() of a submitted form's <input> tags.
-        #
-        # 1.) If for a website, write a dictionary to the JSON file with the created
-        #     short name code as the KEY, and a second dictionary as the VALUE. The second dictionary 
-        #     stores the string 'url' as the KEY and the website url as the VALUE. 
-        #
-        # 2.) Else the URL is for a file. 
-        #     -- Create a new filename for the file by concatenating the short name code entered by the 
-        #        user and a secured version of the original filename.
-        #     -- Check if file is an allowed file type of PDF, PNG, JPEG, JPG, or GIF. 
-        #     -- If file is allowed, the file is then saved into the "user_files" directory. 
-        #     -- Then, a dictinary is written to the JSON file with the created short name code as the KEY, 
-        #        and a second dictionary as the VALUE. The second dictionary stores the string 'file' as the 
-        #        KEY and the new concatenated filename as the VALUE.
+        # Checks whether the user is creating a short URL for a website or file
         if 'url' in request.form.keys():
             urls[request.form['code']] = {'url': request.form['url']}
         else:
@@ -68,14 +49,10 @@ def your_url():
                 flash('File type must be a PDF, PNG, JPEG, JPG, or GIF.')
                 return redirect(url_for('home'))
 
-        # If the JSON file does not exist, the code below creates the file
-        # and adds a dictionary containing data from the submitted form.
         with open('urls.json', 'w') as url_file:
             json.dump(urls, url_file)
             session[request.form['code']] = True
 
-        # Renders the "your_url.html" web page, and also sends the short name code created 
-        # by the user as a variable
         return render_template('your_url.html', code=request.form['code'])
     else:
         return redirect(url_for('home'))
