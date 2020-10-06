@@ -21,7 +21,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
 2. **Download Project**
 
-    To install the miURL project locally, download a zip of the project from GitHub or clone the repository.
+    Download a zip of the miURL project from GitHub or clone the repository.
 
 3. **Create a Virtual Environment**
 
