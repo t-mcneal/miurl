@@ -49,13 +49,13 @@ def your_url():
         #     stores the string 'url' as the KEY and the website url as the VALUE. 
         #
         # 2.) Else the URL is for a file. 
-        #     - Create a new filename for the file by concatenating the short name code entered by the 
-        #       user and a secured version of the original filename.
-        #     - Check if file is an allowed file type of PDF, PNG, JPEG, JPG, or GIF. 
-        #     - If file is allowed, the file is then saved into the "user_files" directory. 
-        #     - Then, a dictinary is written to the JSON file with the created short name code as the KEY, 
-        #       and a second dictionary as the VALUE. The second dictionary stores the string 'file' as the 
-        #       KEY and the new concatenated filename as the VALUE.
+        #     -- Create a new filename for the file by concatenating the short name code entered by the 
+        #        user and a secured version of the original filename.
+        #     -- Check if file is an allowed file type of PDF, PNG, JPEG, JPG, or GIF. 
+        #     -- If file is allowed, the file is then saved into the "user_files" directory. 
+        #     -- Then, a dictinary is written to the JSON file with the created short name code as the KEY, 
+        #        and a second dictionary as the VALUE. The second dictionary stores the string 'file' as the 
+        #        KEY and the new concatenated filename as the VALUE.
         if 'url' in request.form.keys():
             urls[request.form['code']] = {'url': request.form['url']}
         else:
@@ -111,8 +111,8 @@ def dated_url_for(endpoint, **values):
     """Adds last modified timestamp to static (CSS and JavaScript) links.
     
     Keyword arguments:
-    endpoint - directory of files to add time stamps
-    **values - keyworded, variable-length argument list of files in the endpoint directory
+    endpoint -- directory of files to add time stamps
+    **values -- keyworded, variable-length argument list of files in the endpoint directory
     """
     if endpoint == 'static':
         filename = values.get('filename', None)
@@ -127,7 +127,7 @@ def allowed_file(filename):
     Returns False otherwise.
     
     Keyword arguments:
-    filename - name of file
+    filename -- name of file
     """
     if filename[-4] == "." or filename[-5] == ".":
         if filename[-4] == ".":
