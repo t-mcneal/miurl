@@ -28,7 +28,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
     It is best to locally run a Flask application using a virtual environment. To get setup with a virtual 
     environment, follow the quick [guide](https://flask.palletsprojects.com/en/1.1.x/installation/#installation) 
     on the Flask website, which has instructions for both Windows and Mac OS X. The guide will walk you through 
-    how to create a virtual environement within the project directory and install Flask in the environment. 
+    how to create a virtual environment within the project directory and install Flask in the environment. 
     
     >> **Note:** The Flask guide uses the command line. If you are not familiar with terminal commands, read this 
     >> [blog](https://scotch.io/bar-talk/10-need-to-know-mac-terminal-commands) by scotch.io to learn 10 commonly
