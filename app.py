@@ -16,27 +16,21 @@ app.config['USER_FILES'] = 'path/miurl/static/user_files/'
 app.config['ALLOWED_EXTENSIONS'] = ['pdf', 'png', 'jpg', 'jpeg', 'gif']
 
 
-# Route to miURL homepage that has the forms to create a short URL
 @app.route('/')
 def home():
     return render_template('home.html', codes=session.keys())
 
 
-# Route to a web page displaying the created URL that can also be copied to the clipboard
 @app.route('/your-url', methods=['GET', 'POST'])
 def your_url():
     if request.method == 'POST':
         urls = {}
-        
         if os.path.exists('urls.json'):
             with open('urls.json') as urls_file:
                 urls = json.load(urls_file)
-        
         if request.form['code'] in urls.keys():
             flash('That short name has already been taken. Please select another name.')
             return redirect(url_for('home'))
-
-        # Checks whether the user is creating a short URL for a website or file
         if 'url' in request.form.keys():
             urls[request.form['code']] = {'url': request.form['url']}
         else:
@@ -48,17 +42,14 @@ def your_url():
             else:
                 flash('File type must be a PDF, PNG, JPEG, JPG, or GIF.')
                 return redirect(url_for('home'))
-
         with open('urls.json', 'w') as url_file:
             json.dump(urls, url_file)
             session[request.form['code']] = True
-
         return render_template('your_url.html', code=request.form['code'])
     else:
         return redirect(url_for('home'))
 
 
-# Route to the website or file of a created URL by acessing the data in "urls.json"
 @app.route('/<string:code>')
 def redirect_to_url(code):
     if os.path.exists('urls.json'):
@@ -72,13 +63,11 @@ def redirect_to_url(code):
     return abort(404)
 
 
-# Route to error 404 "Not Found" web page
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('page_not_found.html'), 404
 
 
-# Handles cache of static files
 @app.context_processor
 def override_url_for():
     return dict(url_for=dated_url_for)
