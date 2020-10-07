@@ -12,7 +12,6 @@ app.secret_key = b'\xc84\xba\x93\xef\xcdE$v\x0b\x16\xd0\xa4\x94\xd6H\x86!\xc1<\x
 # NOTE: Insert your computer's absolute file path to the "user_files" directory located 
 # in the "static" directory
 app.config['USER_FILES'] = 'path/miurl/static/user_files/'
-
 app.config['ALLOWED_EXTENSIONS'] = ['pdf', 'png', 'jpg', 'jpeg', 'gif']
 
 
