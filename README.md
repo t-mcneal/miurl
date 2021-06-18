@@ -88,7 +88,7 @@ Click this [link](https://youtu.be/arbSqG113i0) to see a demo.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/t-mcneal/miurl/blob/master/LICENSE)
 
 
 
