@@ -34,11 +34,11 @@ h1 {
     top: 1px;
 }
 
-#not-found {
+#notFound {
     margin-top: 100px;
 }
 
-#shortener-title {
+#shortenerTitle {
     text-align: center;
     color: #808080;
     font-family: 'Sriracha', cursive;
@@ -54,14 +54,14 @@ nav {
     padding-top: 10px;
 }
 
-#home-link {
+#homeLink {
     color: white;
     text-decoration: none;
     border-style: solid;
     padding: 20px;
 }
 
-#home-link:hover {
+#homeLink:hover {
     background-color: lightblue;
 }
 
@@ -90,12 +90,12 @@ p {
     font-size: 15px;
 }
 
-#page-container {
+#pageContainer {
     position: relative;
     min-height: 100vh;
 }
   
-#content-wrap {
+#contentWrap {
     padding-bottom: 6.0rem;
 }
 

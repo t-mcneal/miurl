@@ -34,7 +34,7 @@ h1 {
     top: 1px;
 }
 
-#shortener-title {
+#shortenerTitle {
     text-align: center;
     color: #808080;
     font-family: 'Sriracha', cursive;
@@ -51,24 +51,24 @@ nav {
     padding-top: 10px;
 }
 
-#home-link {
+#homeLink {
     color: white;
     text-decoration: none;
     border-style: solid;
     padding: 20px;
 }
 
-#home-link:hover {
+#homeLink:hover {
     background-color: lightblue;
 }
 
-#your-url {
+#yourUrl {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
-#slash-code {
+#slashCode {
     color: olivedrab;
 }
 
@@ -76,11 +76,11 @@ section{
     text-align: center;
 }
 
-#sect-div {
+#sectDiv {
     display: inline-block;
 }
 
-#link-box {
+#linkBox {
     color: #00BFFF;
     border: solid;
     border-radius: 10px;
@@ -93,7 +93,7 @@ section{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#link {
+#txtLink {
     display: inline-block;
     width: 60%;
     padding: 4px;
@@ -105,7 +105,7 @@ section{
     padding: 4px 10px;
 }
 
-#make-more-button {
+#btnMakeMore {
     text-align: center;
     margin-top: 30px;
     text-decoration: none;
@@ -116,16 +116,16 @@ section{
     border-radius: 4px;
 }
 
-#make-more-button:hover {
+#btnMakeMore:hover {
     background-color:  #afafaf;
 }
 
-#page-container {
+#pageContainer {
     position: relative;
     min-height: 100vh;
 }
   
-#content-wrap {
+#contentWrap {
     padding-bottom: 6.0rem;
 }
 

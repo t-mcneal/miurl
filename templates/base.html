@@ -14,20 +14,20 @@
     content that is shown on every page.
     -->
 
-    <div id="page-container">
-        
+    <div id="pageContainer">
         <h1 id="miurl"><a href="{{ url_for('home') }}">miURL</a></h1>
 
-        <h2 id="shortener-title">URL Shortener</h2>
+        <h2 id="shortenerTitle">URL Shortener</h2>
 
-        <nav><a id="home-link" href="{{ url_for('home') }}">Home</a></nav>
+        <nav><a id="homeLink" href="{{ url_for('home') }}">Home</a></nav>
 
-        <div id="content-wrap">
+        <div id="contentWrap">
             {% block main %}
             {% endblock %}
-        </div>
-        <footer><h5>&copy 2020 miURL</h5></footer>
-    </div>
+        </div> <!--contentWrap div ends here-->
+
+        <footer><h5>&copy 2021 miURL</h5></footer>
+    </div> <!--pageContainer div ends here-->
     
     {% block js %}{% endblock %}
 </body>

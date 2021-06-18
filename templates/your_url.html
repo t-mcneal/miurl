@@ -8,17 +8,17 @@
 
 {% block main %}
 
-<h1 id="your-url">Your URL for <span id="slash-code">{{ code }}</span></h1>
+<h1 id="yourUrl">Your URL for <span id="slash-code">{{ code }}</span></h1>
 
 <section>
-    <div id="sect-div">
-        <div id="link-box">
-            <input id="link" value="http://127.0.0.1:5000/{{ code }}">
-            <button class="copy-button" data-clipboard-target="#link">COPY LINK</button>
+    <div id="sectDiv">
+        <div id="linkBox">
+            <input type="text" id="txtLink" value="http://127.0.0.1:5000/{{ code }}">
+            <button class="copy-button" data-clipboard-target="#txtLink">COPY LINK</button>
             <br>
-            <a href="{{ url_for('home') }}"><button id="make-more-button">MAKE MORE</button></a>
-        </div>
-    </div>
+            <a href="{{ url_for('home') }}"><button type="button" id="btnMakeMore">MAKE MORE</button></a>
+        </div> <!--linkBox div ends here-->
+    </div> <!--sectDiv ends here-->
 </section>
 {% endblock %}
 

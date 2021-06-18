@@ -34,7 +34,7 @@ h1 {
     top: 1px;
 }
 
-#shortener-title {
+#shortenerTitle {
     text-align: center;
     color: #808080;
     font-family: 'Sriracha', cursive;
@@ -50,14 +50,14 @@ nav {
     padding-top: 10px;
 }
 
-#home-link {
+#homeLink {
     color: white;
     text-decoration: none;
     border-style: solid;
     padding: 20px;
 }
 
-#home-link:hover {
+#homeLink:hover {
     background-color: lightblue;
 }
 
@@ -74,7 +74,7 @@ nav {
     font-size: 25px;
 }
 
-#file-types {
+#fileTypes {
     text-align: center;
     color: darkcyan;
     font-weight: bold;
@@ -117,7 +117,7 @@ form {
     padding: 4px;
 }
 
-#file-input {
+#fileInput {
     display: inline-block;
     margin-right: 100px;
 }
@@ -136,7 +136,7 @@ form {
     background-color:  #afafaf;
 }
 
-#codes-list {
+#codesList {
     text-align: center;
 }
 
@@ -152,16 +152,16 @@ form {
     color: rgb(136, 182, 43)
 }
 
-#codes-list ul li {
+#codesList ul li {
     list-style-type: none;
 }
 
-#page-container {
+#pageContainer {
     position: relative;
     min-height: 100vh;
 }
   
-#content-wrap {
+#contentWrap {
     padding-bottom: 6.0rem; 
 }
 

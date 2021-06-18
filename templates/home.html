@@ -18,33 +18,32 @@
 {% endfor %}
 
 <section>
-    
-    <div class="form-group" id="url-form">
+    <div class="form-group" id="urlForm">
         <form action="your-url" method="post">
-            <label for="url">Website URL</label>
-            <input class="input-box" type="url" name="url" value="" required>
+            <label for="urlInput">Website URL</label>
+            <input type="url" class="input-box" id="urlInput" name="url" required>
             <br>
-            <label for="code">Short Name</label>
-            <input class="input-box" type="text" name="code" value="" required>
+            <label for="txtShortNameURL">Short Name</label>
+            <input type="text" class="input-box" id="txtShortNameURL" name="code" required>
             <br>
-            <input class="button" type="submit" value="SHORTEN">
+            <input type="submit" class="button" value="SHORTEN">
         </form>
-    </div>
+    </div> <!--urlForm div ends here-->
 
-    <div class="form-group" id="file-form">
+    <div class="form-group" id="fileForm">
         <form action="your-url" method="post" enctype="multipart/form-data">
-            <label for="file">pdf, png, jpeg, jpg, or gif</label>
-            <input id="file-input" class="input-box" type="file" name="file" value="" required>
+            <label for="fileInput">pdf, png, jpeg, jpg, or gif</label>
+            <input type="file" id="fileInput" class="input-box" name="file" required>
             <br>
-            <label for="code">Short Name</label>
-            <input class="input-box" type="text" name="code" value="" required>
+            <label for="txtShortNameFile">Short Name</label>
+            <input type="text" class="input-box" id="txtShortNameFile" name="code" required>
             <br>
-            <input class="button" id="shorten" type="submit" value="SHORTEN">
+            <input type="submit" class="button" value="SHORTEN">
         </form>
-    </div>
+    </div> <!--fileForm div ends here-->
 </section>
 
-<div id="codes-list">
+<div id="codesList">
     {% if codes %}
     <h2>Codes You Created</h2>
     
@@ -56,5 +55,5 @@
         {% endfor %}
     </ul>
     {% endif %}
-</div>
+</div> <!--codesList div ends here-->
 {% endblock %}
