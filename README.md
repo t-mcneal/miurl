@@ -17,7 +17,7 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
 1. **Install Python 3**
 
-    If not currently installed on your computer, download and install Python 3 at [Python.org](https://www.python.org/downloads/).
+    If not currently installed on your computer, download and install [Python 3](https://www.python.org/downloads/).
 
 2. **Download Project**
 
@@ -81,7 +81,7 @@ This step enables the development environment, including the interactive debugge
 
 ## Demo
 
-Click this [link](https://youtu.be/arbSqG113i0) to see a demo.
+Click this [link](https://youtu.be/arbSqG113i0) to watch a demo.
 
 ![miURL Screenshot](https://github.com/t-mcneal/miurl/blob/master/readme_images/miurl_screenshot.png)
 
