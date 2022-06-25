@@ -8,9 +8,9 @@ Python’s Flask web framework, JSON, and clipboard.js.
 
 ## Table of Contents
 
-* [Installation](https://github.com/t-mcneal/miurl/blob/master/README.md#installation)
-* [Usage](https://github.com/t-mcneal/miurl/blob/master/README.md#usage)
-* [Demo](https://github.com/t-mcneal/miurl/blob/master/README.md#demo)
+* [Installation](https://github.com/t-mcneal/miurl/blob/main/README.md#installation)
+* [Usage](https://github.com/t-mcneal/miurl/blob/main/README.md#usage)
+* [Demo](https://github.com/t-mcneal/miurl/blob/main/README.md#demo)
 
 
 ## Installation
@@ -83,12 +83,12 @@ This step enables the development environment, including the interactive debugge
 
 Click this [link](https://youtu.be/arbSqG113i0) to watch a demo.
 
-![miURL Screenshot](https://github.com/t-mcneal/miurl/blob/master/readme_images/miurl_screenshot.png)
+![miURL Screenshot](https://github.com/t-mcneal/miurl/blob/main/readme_images/miurl_screenshot.png)
 
 
 ## License
 
-[MIT](https://github.com/t-mcneal/miurl/blob/master/LICENSE)
+[MIT](https://github.com/t-mcneal/miurl/blob/main/LICENSE)
 
 
 
